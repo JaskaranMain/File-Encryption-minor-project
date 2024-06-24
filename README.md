@@ -23,6 +23,7 @@ Key points of the code:
 7- The closeConnection() method checks if the connection is not null, closes the connection, logs a message, and sets the connection to null.
 
 <hr>
+<hr>
 
 <h2>DAO package:</h2> 
 <h3>userDAO:</h3>
@@ -45,3 +46,45 @@ Key points of the code:
 7- If no match is found during the iteration, the method returns false, indicating that the email does not exist in the database.
 
 8- If an SQL exception occurs during the process, it is caught, the exception is printed, and the method returns false.
+
+<hr>
+<hr>
+
+<h2>SERVICES</h2>
+
+<h3>sendOTPservices</h3>
+I import this file code because The code provided is a Java method designed to send an OTP (One Time Password) via email using the JavaMail API. Here are the main technologies used in this code:
+<br>
+<h3>JavaMail API:</h3>
+
+The code uses the JavaMail API, which provides a platform-independent and protocol-independent framework to build mail and messaging applications.
+
+<h3>SMTP (Simple Mail Transfer Protocol):</h3>
+
+The code interacts with the SMTP protocol to send emails. Specifically, it uses Gmail's SMTP server (smtp.gmail.com).
+
+<h3>Java Properties Class:</h3>
+
+Utilized to configure and maintain properties for the mail session, such as SMTP server settings.
+<hr>
+<h3>Topic to understand in the code</h3>
+<hr>
+
+<h4>Complex API Usage:</h4>
+
+The JavaMail API has a steep learning curve due to its extensive configuration options and detailed setup requirements. Understanding the API's intricacies and correctly implementing them can be challenging for beginners.
+
+<h4>Handling SMTP Protocol:</h4>
+
+Setting up and troubleshooting SMTP configurations (e.g., ports, SSL, authentication) can be tricky. Misconfiguration can lead to failed email sending attempts, and debugging such issues requires knowledge of email protocols.
+
+<h4>Authentication Handling:</h4>
+
+Securely managing email credentials within the code is crucial. The placeholder new PasswordAuthentication(from, ""); indicates that the password should be provided, which poses security risks if not handled properly.
+
+<h4>Dependency Management:</h4>
+
+Using external libraries like JavaMail requires managing dependencies correctly, ensuring the right versions are included, and resolving any conflicts that may arise.
+<hr>
+Overall, while the core logic of sending an email seems straightforward, the associated configurations, error handling, and secure management of credentials add layers of complexity that can make this code challenging to write.
+<hr>
