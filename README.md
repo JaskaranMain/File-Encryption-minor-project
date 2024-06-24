@@ -1,4 +1,4 @@
-# File-Encryption-minor-project
+# File-Encryption-Project--SecureHide
 
 
 
